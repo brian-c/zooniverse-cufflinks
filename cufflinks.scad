@@ -1,25 +1,4 @@
-$fn=50;
-
-flat=false;
-
-module logo() {
-  radius=7.5;
-  outer=2;
-  center=2.5;
-  thickness=1.5;
-
-  union() {
-    if (flat) {
-      rotate_extrude() translate([radius-(outer/2), 0, 0]) square([outer, outer], center=true);
-      cylinder(r=center, h=thickness, center=true);
-    } else {
-      rotate_extrude() translate([radius-(outer/2), 0, 0]) scale([1, 0.8]) rotate(45) square([outer, outer], center=true);
-      sphere(r=center/1.2);
-    }
-
-    rotate(35) scale([17, 1.25, 1]) sphere(r=thickness/2);
-  }
-}
+use <logo.scad>;
 
 module back() {
   thickness=1.5;
