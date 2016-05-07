@@ -1,3 +1,5 @@
+$fn=24;
+
 use <logo.scad>;
 
 module back() {

@@ -1,4 +1,4 @@
-$fn=100;
+$fn=48;
 
 module logo(diameter=15) {
   radius=diameter/2;
